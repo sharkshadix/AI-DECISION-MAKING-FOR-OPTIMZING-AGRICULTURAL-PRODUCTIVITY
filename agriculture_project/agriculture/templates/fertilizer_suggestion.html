@@ -1,0 +1,54 @@
+# fertilizer_suggestion.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Suggestion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">AI-Enhanced Agriculture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/crop-recommendation/">Crop Recommendation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/fertilizer-suggestion/">Fertilizer Suggestion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/disease-detection/">Disease Detection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Fertilizer Suggestion System</h2>
+        <p class="text-center">Enter details to get the best fertilizer recommendations.</p>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="soilNutrient" class="form-label">Soil Nutrient Levels</label>
+                <input type="text" class="form-control" id="soilNutrient" placeholder="Enter soil nutrient levels">
+            </div>
+            <div class="col-md-6">
+                <label for="cropType" class="form-label">Crop Type</label>
+                <input type="text" class="form-control" id="cropType" placeholder="Enter crop type">
+            </div>
+            <div class="col-md-6">
+                <label for="phLevel" class="form-label">Soil pH Level</label>
+                <input type="number" step="0.1" class="form-control" id="phLevel" placeholder="Enter soil pH level">
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success">Get Suggestion</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
